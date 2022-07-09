@@ -9,6 +9,7 @@ function ContentPage() {
   const { posts } = useContext(PostContext);
   const { id } = useParams();
   const post = posts.filter((el) => el.id == id)[0];
+
   console.log(post);
   return (
     <div className='row container-fluid  py-5'>
